@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <!-- Album Art -->
+    <div class="album-art">
+      <img src="https://images.unsplash.com/photo-1462398162066-209faae205a8?w=400&fit=crop" alt="Album Art" id="albumImg">
+      <div class="album-overlay"></div>
+    </div>
+
+    <!-- Song Details -->
+    <div class="song-details">
+      <div class="song-title">Perfect</div>
+      <div class="song-artist">Ed Sheeran</div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-section">
+      <span class="current-time">1:24</span>
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+          <div class="progress-handle"></div>
+        </div>
+      </div>
+      <span class="duration">3:58</span>
+    </div>
+
+    <!-- Main Controls -->
+    <div class="main-controls">
+      <button class="control-btn shuffle">
+        <i class="fas fa-random"></i>
+      </button>
+      <button class="control-btn prev">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button class="control-btn play-pause" id="playBtn">
+        <i class="fas fa-play"></i>
+      </button>
+      <button class="control-btn next">
+        <i class="fas fa-forward"></i>
+      </button>
+      <button class="control-btn repeat">
+        <i class="fas fa-redo"></i>
+      </button>
+    </div>
+
+    <!-- Volume Control -->
+    <div class="volume-section">
+      <i class="fas fa-volume-up volume-icon"></i>
+      <div class="volume-container">
+        <div class="volume-bar">
+          <div class="volume-fill"></div>
+          <div class="volume-handle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Info -->
+    <div class="player-info">
+      <span>Next: Shape of You • Ed Sheeran</span>
+    </div>
+  </div>
+</body>
+</html>
